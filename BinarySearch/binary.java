@@ -1,5 +1,6 @@
 package BinarySearch;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class binary {
@@ -9,6 +10,7 @@ public class binary {
         // int[] arr = new int[n];
 
         int[] arr = {3, 5,  6, 8, 12, 15, 16, 19, 21};
+        Arrays.sort(arr);
         int key = 13;
 
         int l = 0, h = arr.length-1, mid = 0;
@@ -29,3 +31,5 @@ public class binary {
 }
 
 //time complexity = O(log n)
+//sorting take = O(n log n)
+//then : O(n log n + log n)
